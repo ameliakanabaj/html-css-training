@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f8f8f8;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: white;
+  height: 40px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid gray;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+header .start {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header .start button {
+  font-size: large;
+  background-color: white;
+  padding: 0 10px;
+}
+header .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
+}
+header .logo .pl {
+  position: relative;
+  bottom: 6px;
+  font-size: 6px;
+  font-weight: normal;
+}
+header .logo :first-child {
+  color: red;
+}
+header .center input {
+  height: 24px;
+  width: 400px;
+  border: 1px solid lightgray;
+}
+header .center button {
+  height: 26px;
+  border: 1px solid lightgray;
+  width: 50px;
+  position: relative;
+  right: 5px;
+}
+header .end {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .end button {
+  padding: 0 10px;
+}
+header .end .login {
+  color: #065fd4;
+  border: 1px solid blue;
+  width: 80px;
+  margin-right: 10px;
+}
+
+#body {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+#body #left-section {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+#body #left-section .link-group {
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+#body #left-section .link-group li {
+  padding: 10px;
+}
+#body #left-section .login-info p {
+  font-size: 12px;
+  text-align: center;
+}
+#body #left-section .login-info .login {
+  border: 1px solid #065fd4;
+  color: #065fd4;
+  display: flex;
+  flex-direction: row;
+  padding: 8px 14px;
+  background-color: white;
+  margin: 6px 8px;
+}
+#body #left-section .header {
+  text-transform: uppercase;
+  color: gray;
+  font-size: 10px;
+  font-weight: bold;
+  padding-left: 8px;
+}
+#body #main-section .buttons button {
+  border: 1px solid lightgray;
+  border-radius: 12px;
+  padding: 4px 6px;
+  margin: 0 12px;
+}
+#body #main-section .buttons .active {
+  background-color: #030303;
+  color: white;
+}/*# sourceMappingURL=styles.css.map */
