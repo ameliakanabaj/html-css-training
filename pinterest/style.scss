@@ -1,15 +1,25 @@
+@import "./variables";
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
 }
-
+button{
+  border: 0;
+  cursor: pointer;
+}
 
 // Poniżej znajduje się fragment pliku style.scss opisujący wygląd zdjęć oraz ich wysokości. Na podstawie jego struktury napisz html, który będzie odpowiadał przedstawionej strukturze i w połączeniu da końcowy rezultat. Podany kod powinien pozostać bez zmian i jest to jedyne miejsce opisujące wysokości obrazków oraz nadający im kolor.
-
+.content {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin: 12px 70px;
+}
 .content {
   .column {
     > .pic {
+      margin-bottom: 10px;
       background-color: $pic-background;
       border-radius: 1.5625rem;
     }
@@ -26,7 +36,7 @@ body {
     &:nth-of-type(2) {
       > .pic {
         &:first-of-type { height: 18rem; }
-        &:nth-of-type(2) { height: 20rem; }
+        &:nth-of-type(2) { height: 20rem;}
         &:nth-of-type(3) { height: 18rem; }
         &:nth-of-type(4) { height: 19rem; }
         &:nth-of-type(5) { height: 16rem; }
@@ -72,6 +82,116 @@ body {
         &:nth-of-type(5) { height: 20rem; }
         &:nth-of-type(6) { height: 18rem; }
       }
+    }
+  }
+}
+header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  justify-content: space-between;
+  .start{
+    button {
+      background-color: white;
+      &:first-child {
+        color: red;
+        padding-top: 10px;
+      }
+    }
+  }
+  .center{
+    .glowna {
+      background-color: rgb(20, 19, 19);
+      color: white;
+      padding: 8px;
+      border-radius: 18px;
+      margin-top: 10px;
+    }
+    input {
+      border: 0;
+      padding-left: 10px;
+      height: 26px;
+      width: 1200px;
+      background-color: $lightgray;
+      color: $darkgray;
+      border-radius: 30px;
+  
+    }  
+  
+      i {
+        background-color: gray;
+        color: pink;
+      }
+  }
+  .end {
+    margin-right: 14px;
+    display: flex;
+    flex-direction: row;
+    button {
+      background-color: white;
+      i {
+        color: gray;
+      }
+    }
+    .login {
+      background-color: $lightgray;
+      border-radius: 50%;
+      height: 22px;
+      width: 22px;
+      margin-top: 14px;
+    }
+  }
+}
+#body {
+  #first-section {
+    border: 1px solid $lightgray;
+    margin: 18px;
+    border-radius: 16px;
+    padding: 14px;
+    display: flex;
+    flex-direction: row;
+    .first {
+      font-size: small;
+      margin-right: 50px;
+    }
+    .secondary {
+      background-color: $lightgray;
+      border: 1px solid $lightgray;
+      margin: 0 10px;
+      border-radius: 18px;
+      font-weight: bold;
+      width: 170px;
+      &:first-of-type {
+        width: 190px;
+      }
+      &:last-of-type {
+        width: 230px;
+      }
+    }
+  }
+  .icons {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    position: fixed;
+    right: 0;
+    bottom: 300px;
+    button {
+      background-color: white;
+    }
+    i {
+      border-radius: 50%;
+      box-shadow: 2px 2px 6px lightgray;
+      margin-bottom: 10px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }
