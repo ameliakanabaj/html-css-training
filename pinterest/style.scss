@@ -1,0 +1,78 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+// Poniżej znajduje się fragment pliku style.scss opisujący wygląd zdjęć oraz ich wysokości. Na podstawie jego struktury napisz html, który będzie odpowiadał przedstawionej strukturze i w połączeniu da końcowy rezultat. Podany kod powinien pozostać bez zmian i jest to jedyne miejsce opisujące wysokości obrazków oraz nadający im kolor.
+
+.content {
+  .column {
+    > .pic {
+      background-color: $pic-background;
+      border-radius: 1.5625rem;
+    }
+    &:first-of-type {
+      > .pic {
+        &:first-of-type { height: 14rem; }
+        &:nth-of-type(2) { height: 20rem; }
+        &:nth-of-type(3) { height: 23rem; }
+        &:nth-of-type(4) { height: 17rem; }
+        &:nth-of-type(5) { height: 19rem; }
+        &:nth-of-type(6) { height: 16rem; }
+      }
+    }
+    &:nth-of-type(2) {
+      > .pic {
+        &:first-of-type { height: 18rem; }
+        &:nth-of-type(2) { height: 20rem; }
+        &:nth-of-type(3) { height: 18rem; }
+        &:nth-of-type(4) { height: 19rem; }
+        &:nth-of-type(5) { height: 16rem; }
+        &:nth-of-type(6) { height: 20rem; }
+      }
+    }
+    &:nth-of-type(3) {
+      > .pic {
+        &:first-of-type { height: 17rem; }
+        &:nth-of-type(2) { height: 23rem; }
+        &:nth-of-type(3) { height: 16rem; }
+        &:nth-of-type(4) { height: 18rem; }
+        &:nth-of-type(5) { height: 14rem; }
+        &:nth-of-type(6) { height: 20rem; }
+      }
+    }
+    &:nth-of-type(4) {
+      > .pic {
+        &:first-of-type { height: 19rem; }
+        &:nth-of-type(2) { height: 16rem; }
+        &:nth-of-type(3) { height: 17rem; }
+        &:nth-of-type(4) { height: 19rem; }
+        &:nth-of-type(5) { height: 16rem; }
+        &:nth-of-type(6) { height: 17rem; }
+      }
+    }
+    &:nth-of-type(5) {
+      > .pic {
+        &:first-of-type { height: 17rem; }
+        &:nth-of-type(2) { height: 19rem; }
+        &:nth-of-type(3) { height: 18rem; }
+        &:nth-of-type(4) { height: 14rem; }
+        &:nth-of-type(5) { height: 15rem; }
+        &:nth-of-type(6) { height: 17rem; }
+      }
+    }
+    &:nth-of-type(6) {
+      > .pic {
+        &:first-of-type { height: 15rem; }
+        &:nth-of-type(2) { height: 17rem; }
+        &:nth-of-type(3) { height: 19rem; }
+        &:nth-of-type(4) { height: 14rem; }
+        &:nth-of-type(5) { height: 20rem; }
+        &:nth-of-type(6) { height: 18rem; }
+      }
+    }
+  }
+}
+
