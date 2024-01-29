@@ -1,0 +1,175 @@
+body {
+  background-color: #333;
+  color: white;
+  font-family: "PT Sans", sans-serif;
+  font-size: 0.875em;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+}
+
+header {
+  box-shadow: 1px 1px 8px rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  padding: 12px 8px;
+  justify-content: space-between;
+  font-weight: bold;
+}
+header .start {
+  font-size: larger;
+  display: flex;
+  flex-direction: row;
+  color: #8b8b8b;
+}
+header .start :first-child {
+  color: #fcc133;
+}
+header .end {
+  display: flex;
+  gap: 10px;
+}
+header .end button {
+  border-radius: 4px;
+  background-color: white;
+}
+header .end button:nth-of-type(2) {
+  background-color: #ff3600;
+}
+header .end button div {
+  font-weight: bold;
+}
+header .end button .login {
+  color: #333333;
+}
+header .end button .signin {
+  color: white;
+}
+
+#first-section {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  padding: 40px 0 8px 10px;
+  box-shadow: 1px 1px 8px rgb(0, 0, 0);
+}
+#first-section div {
+  text-align: center;
+}
+#first-section .third {
+  margin-right: 90px;
+}
+
+#body {
+  display: grid;
+  grid-template-columns: 90px 2fr 1fr 90px;
+}
+#body .content {
+  grid-column: 2;
+}
+#body .content .first {
+  line-height: 16px;
+  text-align: center;
+  width: 60px;
+  padding: 4px 0;
+  border-radius: 4px;
+  font-size: smaller;
+  background-color: rgba(111, 111, 111, 0.3);
+  position: relative;
+  top: 84px;
+  left: 30px;
+}
+#body .content .first:nth-of-type(2) {
+  padding: 8px 0;
+  position: relative;
+  top: 94px;
+}
+#body .content .image {
+  border: 1px solid lightgray;
+  padding: 220px 0;
+  width: 620px;
+  background-color: lightgray;
+  position: relative;
+  left: 100px;
+  bottom: 40px;
+  justify-content: center;
+}
+#body .content .second {
+  display: flex;
+  flex-direction: row;
+  font-size: 10px;
+  position: relative;
+  top: 426px;
+  left: 628px;
+}
+#body .content .second :nth-child(2) {
+  font-weight: bold;
+  padding-left: 4px;
+}
+#body .content button {
+  background-color: rgba(111, 111, 111, 0.3);
+  color: rgba(211, 211, 211, 0.541);
+  padding: 22px 6px;
+  border-radius: 2px;
+  position: relative;
+  bottom: 300px;
+  left: 69px;
+}
+#body .content button:nth-of-type(2) {
+  position: relative;
+  left: 696px;
+}
+#body .section {
+  margin-top: 88px;
+  border: 1px solid rgba(111, 111, 111, 0.3);
+  height: 280px;
+  width: 270px;
+  border-radius: 6px;
+  background-color: rgba(111, 111, 111, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 80px;
+  padding-top: 14px;
+  gap: 8px;
+}
+#body .section .circle {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: lightgray;
+}
+#body .section .a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  background-color: #ff3600;
+  gap: 6px;
+  width: 90%;
+  padding: 0.5em 0;
+  border-radius: 4px;
+  margin-top: 6px;
+}
+#body .section .b {
+  color: lightgray;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  font-size: 10px;
+  align-items: center;
+  margin-right: 180px;
+}
+#body .section button {
+  width: 90%;
+  padding: 0.5em 0;
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,4 @@
+@import "./variables";
 body {
   background-color: $background-color;
   color: $white;
@@ -7,6 +8,167 @@ body {
   line-height: 1.5em;
   margin: 0;
   padding: 0;
+}
+button {
+  cursor: pointer;
+  border: 0;
+}
+header {
+  box-shadow: 1px 1px 8px rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  padding: 12px 8px;
+  justify-content: space-between;
+  font-weight: bold;
+  .start {
+    font-size: larger;
+    display: flex;
+    flex-direction: row;
+    color: $logo-1;
+    :first-child {
+      color: $logo-2
+    }
+  }
+  .end {
+    display: flex;
+    gap: 10px;
+    button {
+      border-radius: 4px;
+      background-color: $white;
+      &:nth-of-type(2) {
+        background-color: $orange;
+      }
+      div {
+        font-weight: bold;
+      }
+      .login {
+        color: #333333;
+      }
+      .signin {
+        color: $white;
+      }
+    }
+  }
+}
+#first-section {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  div {
+    text-align: center;
+  }
+  .third {
+    margin-right: 90px;
+  }
+  padding: 40px 0 8px 10px;
+  box-shadow: 1px 1px 8px rgb(0, 0, 0);
+}
+#body {
+  display: grid;
+  grid-template-columns: 90px 2fr 1fr 90px;
+  .content {
+    grid-column: 2;
+    .first {
+      line-height: 16px;
+      text-align: center;
+      width: 60px;
+      padding: 4px 0;
+      border-radius: 4px;
+      font-size: smaller;
+      background-color: $dark-gray;
+      position: relative;
+      top: 84px;
+      left: 30px;
+      &:nth-of-type(2) {
+        padding: 8px 0;
+        position: relative;
+        top: 94px;
+      }
+    }
+    .image {
+      border: 1px solid lightgray;
+      padding: 220px 0;
+      width: 620px;
+      background-color: lightgray;
+      position: relative;
+      left: 100px;
+      bottom: 40px;
+      justify-content: center;
+    }
+    .second {
+      :nth-child(2) {
+        font-weight: bold;
+        padding-left: 4px;
+      }
+      display: flex;
+      flex-direction: row;
+      font-size: 10px;
+      position: relative;
+      top: 426px;
+      left: 628px;
+    }
+    button {
+      background-color: $dark-gray;
+      color: rgba(211, 211, 211, 0.541);
+      padding: 22px 6px;
+      border-radius: 2px;
+      position: relative;
+      bottom: 300px;
+      left: 69px;
+      &:nth-of-type(2) {
+        position: relative;
+        left: 696px;
+      }
+    }
+  }
+  .section {
+    margin-top: 88px;
+    border: 1px solid $dark-gray;
+    height: 280px;
+    width: 270px;
+    border-radius: 6px;
+    background-color: $dark-gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 80px;
+    padding-top: 14px;
+    gap: 8px;
+    .circle {
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+      background-color: lightgray;
+    }
+    .a {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      color: white;
+      background-color: $orange;
+      gap: 6px;
+      width: 90%;
+      padding: 0.5em 0;
+      border-radius: 4px;
+      margin-top: 6px;
+    }
+    .b {
+      color: lightgray;
+      display: flex;
+      flex-direction: row;
+      gap: 6px;
+      font-size: 10px;
+      align-items: center;
+      margin-right: 180px;
+    }
+    button {
+      width: 90%;
+      padding: 0.5em 0;
+      background-color: white;
+      color: black;
+      border-radius: 4px;
+    }
+  }
 }
 
 
