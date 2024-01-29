@@ -172,4 +172,10 @@ header .end button .signin {
   background-color: white;
   color: black;
   border-radius: 4px;
+}
+
+.image:hover {
+  background-image: url("dog.jpg");
+  background-size: cover;
+  background-position: center center;
 }/*# sourceMappingURL=style.css.map */
