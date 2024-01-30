@@ -1,0 +1,171 @@
+body {
+  font-family: BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.6;
+}
+body button {
+  border: 0;
+  background-color: white;
+  cursor: pointer;
+}
+body .separator {
+  padding-top: 6px;
+  height: 18px;
+  background-color: lightgray;
+  width: 1px;
+}
+
+header {
+  background-color: white;
+  padding-top: 2px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .logo {
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: -2px;
+}
+header input {
+  width: 900px;
+  border-radius: 16px;
+  border: 1px solid lightgray;
+  padding-left: 6px;
+}
+header button {
+  color: rgb(118, 118, 118);
+}
+header #submit {
+  border: 1px solid lightgray;
+}
+header i {
+  font-size: 14px;
+}
+
+nav {
+  background-color: white;
+  position: sticky;
+  top: 27px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px 90px 6px 0;
+}
+nav .separator {
+  height: 10px;
+}
+nav button {
+  color: rgb(118, 118, 118);
+}
+nav .active {
+  font-weight: bold;
+  color: #07022d;
+}
+
+#search-section .content {
+  background-color: #07022d;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 0 100px 30%;
+}
+#search-section .content :nth-child(2) {
+  margin-bottom: 8px;
+}
+#search-section .content .header {
+  font-weight: bolder;
+  font-size: 32px;
+  color: white;
+  padding-bottom: 10px;
+}
+#search-section .content span {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+}
+#search-section .content .search {
+  background-color: white;
+  width: 52%;
+  padding: 4px 0 6px 3px;
+  border-radius: 6px;
+  text-align: start;
+}
+#search-section .content .search input {
+  position: relative;
+  right: 246px;
+  border: 0;
+}
+#search-section .content .trending {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  color: lightgray;
+  font-size: 12px;
+}
+#search-section .content .trending span {
+  color: white;
+}
+
+.main {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 150px 1fr 1fr 1fr 150px;
+  gap: 30px;
+  color: #e9e2d9;
+}
+.main .pic {
+  border: 1px solid #e9e2d9;
+  background-color: #e9e2d9;
+  margin-bottom: 30px;
+}
+.main .pic .top {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 8px 8px 0 0;
+  gap: 10px;
+}
+.main .pic .top button {
+  border-radius: 4px;
+}
+.main .pic .top i {
+  font-size: 12px;
+  padding: 6px;
+}
+.main .pic .bottom {
+  margin-top: 16em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.main .pic .bottom button {
+  border-radius: 4px;
+}
+.main .pic .bottom i {
+  font-size: 12px;
+  padding: 6px;
+}
+.main .first-column {
+  grid-column: 2;
+}
+.main i {
+  color: #e9e2d9;
+}
+.main button {
+  background-color: #e9e2d9;
+  align-self: flex-end;
+}
+.main .pic:hover {
+  color: black;
+}
+.main .pic:hover button {
+  background-color: white;
+}
+.main .pic:hover button i {
+  color: black;
+}/*# sourceMappingURL=style.css.map */

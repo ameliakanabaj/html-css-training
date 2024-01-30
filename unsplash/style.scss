@@ -1,0 +1,172 @@
+@import "./variables";
+body {
+  font-family: BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica,
+    Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.6;
+  //color: $primary-text-color;
+  button {
+    border: 0;
+    background-color: white;
+    cursor: pointer;
+  }
+  .separator {
+    padding-top: 6px;
+    height: 18px;
+    background-color: $lightgray;
+    width: 1px;
+  }
+}
+header {
+  background-color: white;
+  padding-top: 2px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .logo {
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: -2px;
+  }
+  input {
+    width: 900px;
+    border-radius: 16px;
+    border: 1px solid lightgray;
+    padding-left: 6px;
+  }
+  button {
+    color: $primary-text-color;
+  }
+  #submit {
+    border: 1px solid $lightgray;
+  }
+  i {
+    font-size: 14px;
+  }
+}
+nav {
+  background-color: white;
+  position: sticky;
+  top: 27px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px 90px 6px 0;
+  .separator {
+    height: 10px;
+  }
+  button {
+    color: $primary-text-color;
+  }
+  .active {
+    font-weight: bold;
+    color: $primary-color;
+  }
+}
+#search-section {
+  .content {
+    :nth-child(2) {
+      margin-bottom: 8px;
+    }
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0 100px 30%;
+    .header {
+      font-weight: bolder;
+      font-size: 32px;
+      color: white;
+      padding-bottom: 10px;
+    }
+    span {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      font-size: small;
+    }
+    .search {
+      background-color: white;
+      input {
+        position: relative;
+        right: 246px;
+        border: 0;
+      }
+      width: 52%;
+      padding: 4px 0 6px 3px;
+      border-radius: 6px;
+      text-align: start;
+    }
+    .trending {
+      padding-top: 10px;
+      display: flex;
+      flex-direction: row;
+      gap: 6px;
+      color: lightgray;
+      font-size: 12px;
+      span {
+        color: white;
+      }
+    }
+  }
+}
+.main {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 150px 1fr 1fr 1fr 150px;
+  gap: 30px;
+  .pic {
+    border: 1px solid $pic-background-color;
+    background-color: $pic-background-color;
+    margin-bottom: 30px;
+    .top {
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 8px 8px 0 0;
+      gap: 10px;
+      button {
+        border-radius: 4px;
+      }
+      i {
+        font-size: 12px;
+        padding: 6px;
+      }
+    }
+    .bottom {
+      margin-top: 16em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 10px;
+      button {
+        border-radius: 4px;
+      }
+      i {
+        font-size: 12px;
+        padding: 6px;
+      }
+    }
+  }
+  .first-column {
+    grid-column: 2;
+  }
+  color: $pic-background-color;
+  i {
+    color: $pic-background-color;
+  }
+  button {
+    background-color: $pic-background-color;
+    align-self: flex-end;
+  }
+  .pic:hover {
+    color: black;
+    button {
+      background-color: white;
+      i {
+        color: black;
+      }
+    }
+  }
+}
