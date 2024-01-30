@@ -170,3 +170,36 @@ nav {
     }
   }
 }
+footer {
+  border-top: 1px solid lightgray;
+  padding-top: 26px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 180px 50px 180px;
+  .left-section {
+    a {
+      color: $primary-text-color;
+      text-decoration: none;
+      padding-right: 10px;
+      font-size: 14px;
+    }
+  }
+  .right-section {
+    a {
+      color: $primary-text-color;
+      padding-left: 10px;
+    }
+  }
+}
+.first {
+  margin-left: 49%;
+  margin-bottom: 10px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 4px 6px;
+  background-color: lightgray;
+  .dots {
+    letter-spacing: 2px;
+  }
+}
