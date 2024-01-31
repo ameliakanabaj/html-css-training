@@ -1,0 +1,168 @@
+@import "./variables";
+* {
+    margin: 0;
+    padding: 0;
+}
+body { 
+    font-family: BlinkMacSystemFont, Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif; 
+}
+button {
+    border: 0;
+    cursor: pointer;
+}
+header {
+    position: sticky;
+    top: 0;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    padding: 12px 8px;
+    .logo {
+        :first-child {
+            font-weight: bold;
+        }
+    }
+    .address {
+        text-decoration: underline;
+        font-size: 14px;
+        letter-spacing: 2px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    button {
+        background-color: $primary-color;
+        i {
+            font-size: 16px;
+            color: white;
+        }
+    }
+}
+.type-section {
+    background-color: $type-section-background;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    button {
+        background-color: $type-section-background;
+        padding: 10px 30px;
+    }
+    button:hover {
+        border-bottom: 2px solid $primary-color;
+        color: $primary-color;
+    }
+}
+.category-section {
+    margin: 12px 20% 0 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    button {
+        background-color: white;
+
+    }
+    .active {
+        background-color: $primary-color;
+        color: white;
+        border-radius: 12px;
+        padding: 4px 8px;
+    }
+    :last-child {
+        color: $primary-color;
+        font-weight: bold;
+    }
+}
+.main-section {
+    margin: 16px 10%;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    .left-main-section {
+        font-size: 14px;
+        .header {
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+        .radio-button {
+            padding-bottom: 6px;
+            &:last-of-type {
+                padding-bottom: 20px;
+            }
+        }
+        .stars {
+            margin-bottom: 14px;
+        }
+        .checkbox {
+            padding-bottom: 6px;
+        }
+    }
+    .right-main-section {
+        font-size: 14px;
+        grid-column: 2;
+        .header {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        display: flex;
+        flex-direction: column;
+        .item {
+            margin-bottom: 18px;
+            border: 1px solid lightgray;
+            display: grid;
+            height: 150px;
+            grid-template-columns: 1fr 2fr;
+            $pom: 1;
+            @each $color in $item-colors{
+                &:nth-of-type(#{$pom}){
+                    .pic {
+                        background-color: $color;
+                        height: 150px;
+                    }
+                }
+                $pom:$pom+1;
+            }
+            $pom: 8;
+            @each $color in $item-colors{
+                &:nth-of-type(#{$pom}){
+                    .pic {
+                        background-color: $color;
+                        height: 150px;
+                    }
+                }
+                $pom:$pom+1;
+            }
+            grid-column: 1;
+            .info {
+                grid-column: 2;
+                position: relative;
+                bottom: 130px;
+                margin-left: 40px;
+                letter-spacing: 2px;
+                color: rgb(114, 114, 114);
+                .description {
+                    font-size: 12px;
+                    position: relative;
+                    bottom: 6px;
+                }
+                .content {
+                    display: flex;
+                    flex-direction: row;
+
+                }
+            }
+        }
+    }
+    .search {
+        input {
+            width: 90%;
+            padding: 6px 0 6px 8px;
+            border: 1px solid lightgray;
+        }
+        button {
+            margin-left: 6px;
+            background-color: white;
+            i {
+                font-size: 1.3em;
+            }
+        }
+    }
+}
