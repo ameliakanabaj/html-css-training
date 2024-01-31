@@ -105,7 +105,7 @@ header button i {
   flex-direction: column;
 }
 .main-section .right-main-section .header {
-  margin: 10px 0;
+  margin: 18px 0;
   font-weight: bold;
 }
 .main-section .right-main-section .item {
@@ -180,6 +180,23 @@ header button i {
   background-color: #d9bbe1;
   height: 150px;
 }
+.main-section .right-main-section .item .logo {
+  background-color: white;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  position: relative;
+  top: 36px;
+  right: 36px;
+}
+.main-section .right-main-section .item .logo .name {
+  transform: rotate(-12deg);
+  color: #fb6100;
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+  font-weight: bold;
+}
 .main-section .right-main-section .item .info {
   grid-column: 2;
   position: relative;
@@ -194,8 +211,26 @@ header button i {
   bottom: 6px;
 }
 .main-section .right-main-section .item .info .content {
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin-right: 36%;
+  font-size: 12px;
+}
+.main-section .right-main-section .item .info .content div {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+.main-section .right-main-section .item .info .content .star i {
+  color: #fb6100;
+}
+.main-section .right-main-section .item .info .content .star div {
+  color: #fb6100;
+}
+.main-section .right-main-section .item .info .content .star div :first-child {
+  color: rgb(114, 114, 114);
 }
 .main-section .search input {
   width: 90%;

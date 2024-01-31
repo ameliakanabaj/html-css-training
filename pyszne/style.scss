@@ -99,7 +99,7 @@ header {
         font-size: 14px;
         grid-column: 2;
         .header {
-            margin: 10px 0;
+            margin: 18px 0;
             font-weight: bold;
         }
         display: flex;
@@ -131,6 +131,24 @@ header {
                 $pom:$pom+1;
             }
             grid-column: 1;
+            .logo {
+                background-color: white;
+                height: 75px;
+                width: 75px;
+                border-radius: 50%;
+                position: relative;
+                top: 36px;
+                right: 36px;
+                .name {
+                    transform: rotate(-12deg);
+                    color: $primary-color;
+                    display: flex;
+                    justify-content: center;
+                    margin: 2em;
+                    font-weight: bold;
+            
+                }
+            }
             .info {
                 grid-column: 2;
                 position: relative;
@@ -144,9 +162,28 @@ header {
                     bottom: 6px;
                 }
                 .content {
+                    margin-top: 20px;
                     display: flex;
                     flex-direction: row;
-
+                    justify-content: space-between;
+                    margin-right: 36%;
+                    font-size: 12px;
+                    div {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 6px;
+                    }
+                    .star {
+                        i {
+                            color: $primary-color;
+                        }
+                        div {
+                            color: $primary-color;
+                            :first-child {
+                                color: rgb(114, 114, 114);
+                            }
+                        }
+                    }
                 }
             }
         }
