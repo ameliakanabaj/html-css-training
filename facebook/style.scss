@@ -1,0 +1,87 @@
+$gray: rgb(46, 48, 51);
+body {
+  background-color: rgb(28, 30, 33);
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin: 12px 14% 0 14%;
+}
+button {
+  border: 0;
+  cursor: pointer;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  .logo {
+    border-radius: 50%;
+    background-color: lightseagreen;
+    height: 90px;
+    width: 90px;
+    border: 6px solid rgb(72, 79, 85);
+  }
+  .name {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    align-self: flex-end;
+  }
+  .change-photo {
+    background-color: rgba(255, 255, 255, 0.308);
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 30px;
+    top: 60px;
+  }
+}
+.nav {
+  div:first-of-type {
+    height: 50px;
+    margin-top: 40px;
+    border: 1px solid rgb(46, 48, 51);
+    background-color: rgb(46, 48, 51);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+  }
+  .menu-list {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right: 20px;
+    list-style-type: none;
+    a {
+      margin-right: 40px;
+      text-decoration: none;
+      color: gray;
+    }
+  }
+  .buttons {
+    position: relative;
+    bottom: 20px;
+    right: 10px;
+    .btn {
+      margin-left: 10px;
+      background-color: rgba(128, 128, 128, 0.54);
+      padding: 10px;
+      border-radius: 6px;
+      color: white;
+    }
+  }
+}
+.container {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  .left {
+    .box {
+      background-color: $gray;
+      grid-template-rows: 1fr 6fr;
+    }
+  }
+}
