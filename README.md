@@ -5,9 +5,12 @@ W tym projekcie próbowałam odtworzyć popularne strony internetowe w celu prze
 ## Znajdziemy tutaj wygląd stron:
 
 - Facebook
-- Youtube
+- Photoblog
 - Pinterest
-
+- Pyszne.pl
+- Unsplash
+- Youtube
+  
 ## Instalacja
 
 1. Sklonuj repozytorium:
