@@ -15,6 +15,6 @@ W tym projekcie próbowałam odtworzyć popularne strony internetowe w celu prze
 
 1. Sklonuj repozytorium:
    ```bash
-   git clone https://github.com/twoje_uzytkownik/nazwa-repo.git](https://github.com/ameliakanabaj/cwiczeniaweb.git
+   git clone https://github.com/ameliakanabaj/html-css-training.git
 
 2. Stronę można łatwo uruchomić za pomocą wtyczki live-server
